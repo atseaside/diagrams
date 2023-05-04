@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2023-05-04T07:15:02.119Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="JZOr2dh5H-XgjuGFyUMg" version="21.2.7" type="github">
+  <diagram name="第 1 页" id="jWvHHBDuN6PCafXd2S0I">
+    <mxGraphModel dx="1763" dy="1730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aATka8N_W_5GR-a2BBL4-3" value="信令服务器" style="verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server;rounded=1;fontSize=13;shadow=0;comic=0;treeMoving=0;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="369" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-16" value="客户端 A" style="verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;fontSize=13;rounded=1;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry y="210" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-17" value="客户端 B" style="verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;fontSize=13;rounded=1;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="750" y="210" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-25" value="STUN / TURN 服务器" style="verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server;rounded=1;fontSize=13;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="369" y="400" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-26" value="NAT/防火墙" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.firewall;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="590" y="207.5" width="70" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-28" value="NAT/防火墙" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.firewall;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="190" y="207.5" width="70" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-31" value="穿透NAT或防火墙获取公网IP进行IP直连" style="endArrow=classic;startArrow=classic;html=1;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;" edge="1" parent="1" source="aATka8N_W_5GR-a2BBL4-28" target="aATka8N_W_5GR-a2BBL4-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="270" as="sourcePoint" />
+            <mxPoint x="410" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-33" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;" edge="1" parent="1" source="aATka8N_W_5GR-a2BBL4-26" target="aATka8N_W_5GR-a2BBL4-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="370" as="sourcePoint" />
+            <mxPoint x="740" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-34" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;" edge="1" parent="1" source="aATka8N_W_5GR-a2BBL4-16" target="aATka8N_W_5GR-a2BBL4-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="440" as="sourcePoint" />
+            <mxPoint x="130" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-36" value="获取公网 IP" style="endArrow=classic;startArrow=classic;html=1;rounded=1;entryX=0.95;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aATka8N_W_5GR-a2BBL4-25" target="aATka8N_W_5GR-a2BBL4-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="390" as="sourcePoint" />
+            <mxPoint x="240" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-37" value="获取公网 IP" style="endArrow=classic;startArrow=classic;html=1;rounded=1;entryX=0;entryY=0.85;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aATka8N_W_5GR-a2BBL4-25" target="aATka8N_W_5GR-a2BBL4-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="689" y="444.5" as="sourcePoint" />
+            <mxPoint x="580" y="282.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-39" value="发送 SDP、会话消息等信息" style="endArrow=classic;startArrow=classic;html=1;rounded=1;entryX=0;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=13;" edge="1" parent="1" source="aATka8N_W_5GR-a2BBL4-3" target="aATka8N_W_5GR-a2BBL4-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="120" as="sourcePoint" />
+            <mxPoint x="560" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aATka8N_W_5GR-a2BBL4-40" value="发送 SDP、会话消息等信息" style="endArrow=classic;startArrow=classic;html=1;rounded=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.07;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=13;" edge="1" parent="1" source="aATka8N_W_5GR-a2BBL4-16" target="aATka8N_W_5GR-a2BBL4-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="160" as="sourcePoint" />
+            <mxPoint x="180" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
